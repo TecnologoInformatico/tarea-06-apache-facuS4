@@ -27,3 +27,29 @@ repositorio: `https://github.com/TecnologoInformatico/AdmInf-web.git`
     "ip": ""
 }
 ```
+# Solucion Tarea
+
+1- mkdir repositorios, git clone https://github.com/TecnologoInformatico/AdmInf-web.git.
+
+2- apt update.
+
+3- sudo apt install apache2.
+
+4- sudo mkdir /var/www/fsalaberry.
+
+5- sudo chown ubuntu fsalaberry.
+
+6- cd /etc/apache2/sites-available, sudo cp 000-default.conf pp.conf, sudo nano pp.conf (se edita el servername por “fsalaberry.tecnologoinformatico.com”).
+
+7- cd /etc, sudo nano hosts (se agrega 127.0.0.1 y fsalaberry.tecnologoinformatico.com).
+
+8- sudo service apache2 restart.
+
+9- cp -r AdmInf-web /var/www/fsalaberry.
+
+10- Para probarlo entro a la ip 144.22.181.202 desde el navegador.
+
+11- {
+    "serverName": "fsalaberry.tecnologoinformatico",
+    "ip": "144.22.181.202"
+}
